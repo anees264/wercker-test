@@ -1,7 +1,6 @@
 box: ubuntu
 build:
-    after-steps:
-        - slack-notifier:
-            url: $SLACK_URL
-            channel: integration-test
-            username: testbot
+    steps:
+        - beaglesecurity/beagle-security@1.4.0:
+            USER_TOKEN: $USER_TOKEN
+            APPLICATION_TOKEN: $APPLICATION_TOKEN
