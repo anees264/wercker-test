@@ -1,6 +1,6 @@
 box: ubuntu
 build:
   steps:
-    - beaglesecurity/beagle-security@1.1.0:
+    - beaglesecurity/beagle-security@1.2.0:
       USER_TOKEN: USER_TOKEN
       APPLICATION_TOKEN: APPLICATION_TOKEN
