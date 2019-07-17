@@ -1,6 +1,8 @@
 box: ubuntu
 build:
     steps:
+        - install-packages:
+            packages: curl
         - beaglesecurity/beagle-security@1.4.0:
             USER_TOKEN: $USER_TOKEN
             APPLICATION_TOKEN: $APPLICATION_TOKEN
